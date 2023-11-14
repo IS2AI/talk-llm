@@ -1,1 +1,1 @@
-# talk-chatgpt-app
+# TalkChatGPT
