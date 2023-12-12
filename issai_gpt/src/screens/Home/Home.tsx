@@ -52,7 +52,7 @@ const Home: React.FC = () => {
         },
         {
           headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer`,
             "Content-Type": "application/json",
           },
         }
