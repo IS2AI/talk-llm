@@ -1,1 +1,1 @@
-# The code will be uloaded soon :)
+# A mobile app for interacting with ChatGPT via natural conversation 
