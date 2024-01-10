@@ -48,7 +48,7 @@ def main(args):
     # run inference
     ######################
     ort_session = onnxruntime.InferenceSession(args.onnx_model)
-    tp = 0
+
     for data in dataloader:
         data = data.cpu().numpy()
         #print(type(data), data.shape)
@@ -58,10 +58,6 @@ def main(args):
         pred = ort_outs[0].argmax(1).ravel().tolist()
         pred = label_map[str(pred[0])]
         print(pred)
-        if pred == "issai":
-            tp += 1
-    
-    print(tp)
 
 
 if __name__ == "__main__":
